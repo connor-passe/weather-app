@@ -1,3 +1,36 @@
-#content {
-    color: red;
+body {
+    background-image: url(../src/background.png);
+}
+
+#searchBar {
+    background-color: transparent;
+    border-width: 0px;
+    color: white;
+    width: 150px;
+    font-size: 16px;
+}
+
+form {
+    display: flex;
+    
+}
+
+#searchBar:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+#searchButton {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../src/magnify.svg);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border-width: 0px;
+    filter: invert();
 }
