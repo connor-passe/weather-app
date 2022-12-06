@@ -10,10 +10,92 @@
 <body>
 
     <div id="content">
-        <form id="searchForm">
-            <input type="text" name="searchBar" id = "searchBar" placeholder="Search Location">
-            <input type="submit" id = "searchButton" value="">
-        </form>
+        <div id="topBox">
+            <div id="tagLine">Overcast Test</div>
+            <div id="locationName">Testland</div>
+            <div id="date">Wednesday, 1st Jan '00</div>
+            <div id="time">10:20</div>
+            <div id="temp">17 F</div>
+            <div id="tagImage"></div>
+            <div id="searchFormHolder">
+                <form id="searchForm">
+                    <input type="text" name="searchBar" id = "searchBar" placeholder="Search Location">
+                    <input type="submit" id = "searchButton" value="">
+                </form>
+            </div>
+        </div>
+        <div id="sideBox">
+            <div class="sideCard" id="feelsLikeCard">
+                <img class="sideImage" src="../src/feelsLike.svg"></img>
+                <div class="sideHeader">Feels Like</div>
+                <div class="sideInfo">16</div>
+                <div class="sideUnit">C</div>
+            </div>
+            <div class="sideCard" id="humidityCard">
+                <img class="sideImage" src = "../src/humidity.svg"></img>
+                <div class="sideHeader">Humidity</div>
+                <div class="sideInfo">73</div>
+                <div class="sideUnit">%</div>
+
+            </div>
+            <div class="sideCard" id="chanceCard">
+                <img class="sideImage" src="../src/rain.svg"></img>
+                <div class="sideHeader">Chance of Rain</div>
+                <div class="sideInfo">100</div>
+                <div class="sideUnit">%</div>
+            </div>
+            <div class="sideCard" id="windCard">
+                <img class="sideImage" src="../src/windy.svg"></img>
+                <div class="sideHeader">Wind Speed</div>
+                <div class="sideInfo">20.5</div>
+                <div class="sideUnit">km/h</div>
+            </div>
+        </div>
+        <div id="bottomBox">
+            <div class="bottomCard" id="item1">
+                <div class="dayOfWeek">Thursday</div>
+                <div class="highTemp">16</div>
+                <div class="lowTemp">10</div>
+                <img src="../src/rain.svg" alt="" class="weatherIcon">
+            </div>
+            <div class="bottomCard" id="item2">
+                <div class="dayOfWeek">Thursday</div>
+                <div class="highTemp">16</div>
+                <div class="lowTemp">10</div>
+                <img src="../src/rain.svg" alt="" class="weatherIcon">
+            </div>
+            <div class="bottomCard" id="item3">
+                <div class="dayOfWeek">Thursday</div>
+                <div class="highTemp">16</div>
+                <div class="lowTemp">10</div>
+                <img src="../src/rain.svg" alt="" class="weatherIcon">
+            </div>
+            <div class="bottomCard" id="item4">
+                <div class="dayOfWeek">Thursday</div>
+                <div class="highTemp">16</div>
+                <div class="lowTemp">10</div>
+                <img src="../src/rain.svg" alt="" class="weatherIcon">
+            </div>
+            <div class="bottomCard" id="item5">
+                <div class="dayOfWeek">Thursday</div>
+                <div class="highTemp">16</div>
+                <div class="lowTemp">10</div>
+                <img src="../src/rain.svg" alt="" class="weatherIcon">
+            </div>
+            <div class="bottomCard" id="item6">
+                <div class="dayOfWeek">Thursday</div>
+                <div class="highTemp">16</div>
+                <div class="lowTemp">10</div>
+                <img src="../src/rain.svg" alt="" class="weatherIcon">
+            </div>
+            <div class="bottomCard" id="item7">
+                <div class="dayOfWeek">Thursday</div>
+                <div class="highTemp">16</div>
+                <div class="lowTemp">10</div>
+                <img src="../src/rain.svg" alt="" class="weatherIcon">
+            </div>
+        </div>
+
     </div>
     <script src="main.js"></script>
 

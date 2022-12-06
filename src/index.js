@@ -26,5 +26,36 @@ async function handleForm(event) {
     console.log(weatherData);
 }
 
+// prep for grip and left move
+
+function prepLayout() {
+    // slide to the left
+    const searchFormHolder = document.getElementById('searchFormHolder');
+    searchFormHolder.style.justifyContent = 'flex-start';
+    const searchBar = document.getElementById('searchBar');
+    searchBar.style.width = '150px';
+
+    // create grid layout
+    const content = document.getElementById('content');
+    content.style.display = 'grid';
+    content.style.gridTemplateColumns = 'auto 1fr auto';
+    content.style.gridTemplateRows = 'auto 1fr auto';
+
+    // create info box
+    const topInfoBox = document.createElement('div')
+}
+
+// Display data on page
+function displayWeather() {
+    // put search bar to the side (if needed)
+
+    // make info box
+    // make extra info box
+    // make daily cells
+}
+
+// slide to the side function
+
+
 const form = document.getElementById('searchForm');
 form.addEventListener('submit', handleForm);
