@@ -146,6 +146,9 @@ async function handleForm(event) {
 }
 
 async function initLoad() {
+    const content = document.getElementById('content');
+    content.style.display = 'none';
+
     const form = document.getElementById("searchForm");
     form.addEventListener("submit", handleForm);
 
@@ -160,6 +163,7 @@ async function initLoad() {
       console.log(weatherData);
       updateDisplay(weatherData, coordinates);
     }
+    content.style.display = 'grid';
 }
 
 initLoad();

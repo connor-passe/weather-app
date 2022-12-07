@@ -10,89 +10,89 @@
 </head>
 
 <body>
-    <div id="topBox">
-        <div id="tagLine"></div>
-        <div id="locationName"></div>
-        <div id="date"></div>
-        <div id="temp"></div>
-        <img id="tagImage" src="../src/rain.svg"></img>
-        <div id="searchFormHolder">
-            <form id="searchForm">
-                <input type="text" name="searchBar" id="searchBar" placeholder="Search Location">
-                <input type="submit" id="searchButton" value="">
-            </form>
+    <div id="content">
+        <div id="topBox">
+            <div id="tagLine"></div>
+            <div id="locationName"></div>
+            <div id="date"></div>
+            <div id="temp"></div>
+            <img id="tagImage" src="../src/rain.svg"></img>
+            <div id="searchFormHolder">
+                <form id="searchForm">
+                    <input type="text" name="searchBar" id="searchBar" placeholder="Search Location">
+                    <input type="submit" id="searchButton" value="">
+                </form>
+            </div>
+            <div id="searchErrorBox">Location not found. <br>Search must be in the form of "City", "City, State" or "City, Country".</div>
         </div>
-        <div id="searchErrorBox">Location not found. <br>Search must be in the form of "City", "City, State" or "City, Country".</div>
-    </div>
-    <div id="topGap"></div>
-    <div id="sideBox">
-        <div class="sideCard" id="feelsLikeCard">
-            <img class="sideImage" src="../src/feelsLike.svg"></img>
-            <div class="sideHeader">Feels Like</div>
-            <div class="sideInfo" id="FLI"></div>
+        <div id="topGap"></div>
+        <div id="sideBox">
+            <div class="sideCard" id="feelsLikeCard">
+                <img class="sideImage" src="../src/feelsLike.svg"></img>
+                <div class="sideHeader">Feels Like</div>
+                <div class="sideInfo" id="FLI"></div>
+            </div>
+            <div class="sideCard" id="humidityCard">
+                <img class="sideImage" src="../src/humidity.svg"></img>
+                <div class="sideHeader">Humidity</div>
+                <div class="sideInfo" id="HI"></div>
+            </div>
+            <div class="sideCard" id="pressureCard">
+                <img class="sideImage" src="../src/pressure.svg"></img>
+                <div class="sideHeader">Pressure</div>
+                <div class="sideInfo" id="PI"></div>
+            </div>
+            <div class="sideCard" id="windCard">
+                <img class="sideImage" src="../src/windy.svg"></img>
+                <div class="sideHeader">Wind Speed</div>
+                <div class="sideInfo" id="WSI"></div>
+            </div>
         </div>
-        <div class="sideCard" id="humidityCard">
-            <img class="sideImage" src="../src/humidity.svg"></img>
-            <div class="sideHeader">Humidity</div>
-            <div class="sideInfo" id="HI"></div>
-
+        <div id="middleGap"></div>
+        <div id="bottomBox">
+            <div class="bottomCard" id="item1">
+                <div class="dayOfWeek">Thursday</div>
+                <div class="highTemp">16</div>
+                <div class="lowTemp">10</div>
+                <img src="../src/rain.svg" alt="" class="weatherIcon">
+            </div>
+            <div class="bottomCard" id="item2">
+                <div class="dayOfWeek">Thursday</div>
+                <div class="highTemp">16</div>
+                <div class="lowTemp">10</div>
+                <img src="../src/rain.svg" alt="" class="weatherIcon">
+            </div>
+            <div class="bottomCard" id="item3">
+                <div class="dayOfWeek"></div>
+                <div class="highTemp"></div>
+                <div class="lowTemp"></div>
+                <img src="../src/rain.svg" alt="" class="weatherIcon">
+            </div>
+            <div class="bottomCard" id="item4">
+                <div class="dayOfWeek"></div>
+                <div class="highTemp"></div>
+                <div class="lowTemp"></div>
+                <img src="../src/rain.svg" alt="" class="weatherIcon">
+            </div>
+            <div class="bottomCard" id="item5">
+                <div class="dayOfWeek"></div>
+                <div class="highTemp"></div>
+                <div class="lowTemp"></div>
+                <img src="../src/rain.svg" alt="" class="weatherIcon">
+            </div>
+            <div class="bottomCard" id="item6">
+                <div class="dayOfWeek"></div>
+                <div class="highTemp">16</div>
+                <div class="lowTemp">10</div>
+                <img src="../src/rain.svg" alt="" class="weatherIcon">
+            </div>
+            <div class="bottomCard" id="item7">
+                <div class="dayOfWeek"></div>
+                <div class="highTemp"></div>
+                <div class="lowTemp"></div>
+                <img src="../src/rain.svg" alt="" class="weatherIcon">
+            </div>
         </div>
-        <div class="sideCard" id="pressureCard">
-            <img class="sideImage" src="../src/pressure.svg"></img>
-            <div class="sideHeader">Pressure</div>
-            <div class="sideInfo" id="PI"></div>
-        </div>
-        <div class="sideCard" id="windCard">
-            <img class="sideImage" src="../src/windy.svg"></img>
-            <div class="sideHeader">Wind Speed</div>
-            <div class="sideInfo" id="WSI"></div>
-        </div>
-    </div>
-    <div id="middleGap"></div>
-    <div id="bottomBox">
-        <div class="bottomCard" id="item1">
-            <div class="dayOfWeek">Thursday</div>
-            <div class="highTemp">16</div>
-            <div class="lowTemp">10</div>
-            <img src="../src/rain.svg" alt="" class="weatherIcon">
-        </div>
-        <div class="bottomCard" id="item2">
-            <div class="dayOfWeek">Thursday</div>
-            <div class="highTemp">16</div>
-            <div class="lowTemp">10</div>
-            <img src="../src/rain.svg" alt="" class="weatherIcon">
-        </div>
-        <div class="bottomCard" id="item3">
-            <div class="dayOfWeek"></div>
-            <div class="highTemp"></div>
-            <div class="lowTemp"></div>
-            <img src="../src/rain.svg" alt="" class="weatherIcon">
-        </div>
-        <div class="bottomCard" id="item4">
-            <div class="dayOfWeek"></div>
-            <div class="highTemp"></div>
-            <div class="lowTemp"></div>
-            <img src="../src/rain.svg" alt="" class="weatherIcon">
-        </div>
-        <div class="bottomCard" id="item5">
-            <div class="dayOfWeek"></div>
-            <div class="highTemp"></div>
-            <div class="lowTemp"></div>
-            <img src="../src/rain.svg" alt="" class="weatherIcon">
-        </div>
-        <div class="bottomCard" id="item6">
-            <div class="dayOfWeek"></div>
-            <div class="highTemp">16</div>
-            <div class="lowTemp">10</div>
-            <img src="../src/rain.svg" alt="" class="weatherIcon">
-        </div>
-        <div class="bottomCard" id="item7">
-            <div class="dayOfWeek"></div>
-            <div class="highTemp"></div>
-            <div class="lowTemp"></div>
-            <img src="../src/rain.svg" alt="" class="weatherIcon">
-        </div>
-
     </div>
     <script src="main.js"></script>
 
