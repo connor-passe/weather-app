@@ -1,15 +1,65 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: url(../src/background.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 8rem;
+    font-family: montserrat,sans-serif;
+    font-weight: 400;
 }
 
-@keyframes example {
-
+img {
+    filter: invert();
 }
-#searchFormHolder {
+#topBox {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
     display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#tagLine {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+#locationName {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#date {
+    font-size: 1rem;
+}
+
+#time {
+    font-size: 1rem;
+}
+
+#temp {
+    font-size: 5.5rem;
+    font-weight: 600;
+}
+
+#tagImage {
+    width: 100px;
+    height: 100px;
+}
+
+#searchFormHolder {
 }
 
 #searchBar {
@@ -18,8 +68,8 @@ body {
     border-width: 0px 0px 2px 0px;
     border-color: white;
     color: white;
-    width: 500px;
-    font-size: 16px;
+    width: 250px;
+    font-size: 1rem;
 }
 
 #searchForm {
@@ -45,4 +95,72 @@ body {
     cursor: pointer;
     border-width: 0px;
     filter: invert();
+}
+
+#sideBox {
+    grid-column: 3 / -1;
+    grid-row: 1 / 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sideCard {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+}
+
+.sideImage {
+    width: 40px;
+    height: 40px;
+    grid-row: 1 / -1;
+}
+
+.sideHeader {
+    font-size: 1rem;
+}
+
+.sideInfo {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#middleGap {
+    grid-column: 1 / -1;
+}
+
+#bottomBox {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.bottomCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.dayOfWeek {
+    font-size: 1.5rem;
+}
+
+.highTemp {
+    padding-top: 20px;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.lowTemp {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.weatherIcon {
+    padding-top: 20px;
+    width: 40px;
+    height: 40px;
 }
