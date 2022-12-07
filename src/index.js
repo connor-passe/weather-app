@@ -1,4 +1,6 @@
 /* eslint-disable prefer-destructuring */
+import './style.css';
+
 const apiKey = "2356d9f05aa16f6fb4168d86141e10dd";
 
 // Get Coordinates from Location Name
