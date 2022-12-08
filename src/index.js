@@ -5,7 +5,6 @@ import fL from "./feelsLike.svg";
 import hum from "./humidity.svg";
 import mag from "./magnify.svg";
 import press from "./pressure.svg";
-import ra from "./rain.svg";
 import win from "./windy.svg";
 
 const apiKey = "2356d9f05aa16f6fb4168d86141e10dd";
