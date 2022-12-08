@@ -12,7 +12,7 @@ const apiKey = "2356d9f05aa16f6fb4168d86141e10dd";
 // Get Coordinates from Location Name
 async function hitGetCoordinates(input) {
   const response = await fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${input}&limit=1&appid=${apiKey}`
+    `https://api.openweathermap.org/geo/1.0/direct?q=${input}&limit=1&appid=${apiKey}`
   );
   const coordinateData = await response.json();
   console.log(coordinateData);
