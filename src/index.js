@@ -1,12 +1,12 @@
 /* eslint-disable prefer-destructuring */
 import "./style.css";
-import background from "./background.png";
-import feelsLike from "./feelsLike.svg";
-import humidity from "./humidity.svg";
-import magnify from "./magnify.svg";
-import pressure from "./pressure.svg";
-import rain from "./rain.svg";
-import windy from "./windy.svg";
+import bg from "./background.png";
+import fL from "./feelsLike.svg";
+import hum from "./humidity.svg";
+import mag from "./magnify.svg";
+import press from "./pressure.svg";
+import ra from "./rain.svg";
+import win from "./windy.svg";
 
 const apiKey = "2356d9f05aa16f6fb4168d86141e10dd";
 
@@ -41,6 +41,13 @@ async function hitGetWeather(coordinates) {
 
 // Display data on page
 function updateDisplay(weatherData, coordinates) {
+  // add images
+  const sideImages = document.getElementsByClassName('sideImage');
+  sideImages[0].src = fL;
+  sideImages[1].src = hum;
+  sideImages[2].src = press;
+  sideImages[3].src = win;
+
   // Clear search bar
   const searchBar = document.getElementById("searchBar");
   searchBar.value = "";
