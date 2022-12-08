@@ -1,5 +1,12 @@
 /* eslint-disable prefer-destructuring */
-import './style.css';
+import "./style.css";
+import background from "./background.png";
+import feelsLike from "./feelsLike.svg";
+import humidity from "./humidity.svg";
+import magnify from "./magnify.svg";
+import pressure from "./pressure.svg";
+import rain from "./rain.svg";
+import windy from "./windy.svg";
 
 const apiKey = "2356d9f05aa16f6fb4168d86141e10dd";
 
@@ -107,7 +114,7 @@ function updateDisplay(weatherData, coordinates) {
   const highTemps = document.getElementsByClassName("highTemp");
   const lowTemps = document.getElementsByClassName("lowTemp");
   const daysOfWeek = document.getElementsByClassName("dayOfWeek");
-  const weatherIcons = document.getElementsByClassName('weatherIcon');
+  const weatherIcons = document.getElementsByClassName("weatherIcon");
 
   const weekArray = [
     "Sunday",
@@ -136,36 +143,36 @@ async function handleForm(event) {
   event.preventDefault();
   const searchTerm = document.getElementById("searchBar").value;
   const coordinates = await hitGetCoordinates(searchTerm);
-  const errorBox = document.getElementById('searchErrorBox');
+  const errorBox = document.getElementById("searchErrorBox");
   if (coordinates === undefined) {
-    errorBox.style.display = 'block';
+    errorBox.style.display = "block";
   } else {
     const weatherData = await hitGetWeather(coordinates);
-    errorBox.style.display ='none';
+    errorBox.style.display = "none";
     console.log(weatherData);
     updateDisplay(weatherData, coordinates);
   }
 }
 
 async function initLoad() {
-    const content = document.getElementById('content');
-    content.style.display = 'none';
+  const content = document.getElementById("content");
+  content.style.display = "none";
 
-    const form = document.getElementById("searchForm");
-    form.addEventListener("submit", handleForm);
+  const form = document.getElementById("searchForm");
+  form.addEventListener("submit", handleForm);
 
-    const searchTerm = 'Wabasha';
-    const coordinates = await hitGetCoordinates(searchTerm);
-    const errorBox = document.getElementById('searchErrorBox');
-    if (coordinates === undefined) {
-      errorBox.style.display = 'block';
-    } else {
-      const weatherData = await hitGetWeather(coordinates);
-      errorBox.style.display ='none';
-      console.log(weatherData);
-      updateDisplay(weatherData, coordinates);
-    }
-    content.style.display = 'grid';
+  const searchTerm = "Wabasha";
+  const coordinates = await hitGetCoordinates(searchTerm);
+  const errorBox = document.getElementById("searchErrorBox");
+  if (coordinates === undefined) {
+    errorBox.style.display = "block";
+  } else {
+    const weatherData = await hitGetWeather(coordinates);
+    errorBox.style.display = "none";
+    console.log(weatherData);
+    updateDisplay(weatherData, coordinates);
+  }
+  content.style.display = "grid";
 }
 
 initLoad();
